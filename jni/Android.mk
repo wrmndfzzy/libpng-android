@@ -1,6 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE    := libpng
+LOCAL_ARM_MODE:= arm
 LOCAL_SRC_FILES := \
 	png.c \
 	pngerror.c \
