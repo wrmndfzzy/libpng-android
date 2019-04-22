@@ -20,9 +20,14 @@ LOCAL_SRC_FILES := \
 	pngwutil.c \
 
 LOCAL_SRC_FILES_arm := \
-			arm/arm_init.c \
-			arm/filter_neon.S \
-      arm/filter_neon_intrinsics.c
+    arm/arm_init.c \
+    arm/filter_neon.S \
+    arm/filter_neon_intrinsics.c
+
+LOCAL_SRC_FILES_arm64 := \
+    arm/arm_init.c \
+    arm/filter_neon.S \
+    arm/filter_neon_intrinsics.c
 
 LOCAL_CFLAGS := -std=gnu89 -Wno-unused-parameter -O3
 LOCAL_CFLAGS_arm := -DPNG_ARM_NEON_OPT=2
